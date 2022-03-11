@@ -11,6 +11,7 @@ public class SwordController : MonoBehaviour
             print("Sword hit enemy");
 
             AudioManager.instance.Play("SwordHit");
+            FindObjectOfType<GameManager>().HurtP2();
         }
     }
 }

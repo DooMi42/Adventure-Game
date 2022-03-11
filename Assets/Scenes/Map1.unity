@@ -736,6 +736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84557422}
+  - component: {fileID: 84557421}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -743,6 +744,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &84557421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84557420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99628d42b8b7ab641afb28b7682a4c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1: {fileID: 1808889331}
+  P2: {fileID: 1143181527648427}
+  P1_maxLife: 5
+  P2_maxLife: 15
+  p1Wins: {fileID: 1156427732}
+  p2Wins: {fileID: 231533953}
+  hearts:
+  - {fileID: 51573117}
+  - {fileID: 135107589}
+  - {fileID: 1534911910}
+  - {fileID: 1623252927}
+  - {fileID: 435682046}
 --- !u!4 &84557422
 Transform:
   m_ObjectHideFlags: 0
