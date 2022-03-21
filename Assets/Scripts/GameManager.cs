@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -78,5 +79,18 @@ public class GameManager : MonoBehaviour
         p2Wins.SetActive(true);
 
         AudioManager.instance.Play("WinFanfare");
+    }
+
+    public void AddHeart()
+    {
+        p1Life += 1;
+
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (p1Life > i)
+            {
+                hearts[i].SetActive(true);
+            }
+        }
     }
 }
